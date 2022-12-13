@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Markers</title>
+  <style>
+    .enviroment {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+  .space-for-makers{
+  margin-top: 100px;
+  background-color: rgb(255, 255, 255);
+  }
+  .marker {
+    width: 400px;
+    height: 75px;
+    margin: 30px auto;
+  }
+  .red {
+    background: linear-gradient(180deg, rgb(127, 0, 0), rgb(255, 0, 0), rgb(77, 0, 0));
+    box-shadow: 0 0 20px 2px rgba(77, 0, 0, 0.7);
+  }
+  .green {
+    background: linear-gradient(rgb(0, 127, 0), rgb(0, 255, 0), rgb(0, 77, 0));
+    box-shadow: 0 0 20px 2px rgba(0, 77, 0, 0.7);
+  } 
+  .yellow {
+    background: linear-gradient(rgb(127, 127, 0), rgb(255, 255, 0), rgb(77, 77, 0));
+    box-shadow: 0 0 20px 2px rgba(77, 77, 0, 0.7);
+  }
+  .blue {
+    background: linear-gradient(rgb(0, 0, 127), rgb(0, 0, 255), rgb(0, 0, 77));
+    box-shadow: 0 0 20px 2px rgba(0, 0, 127, 0.7);
+  }
+  .marker-wrapper {
+    height: 75px;
+    width: 220px;
+    background-color: hsla(360, 50%, 100%, 0.5);
+    display: inline-block;
+    border-left: 20px double rgba(0, 0, 0, 0.7);
+  }
+  .lead {
+    height: 75px;
+    width: 120px;
+    display: inline-block;
+  }
+  </style>
+</head>
+<body>
+	<div class="enviroment">
+		<h1>CSS Color Markers</h1>
+		<div class="space-for-makers">
+			<div class="marker red">
+				<div class="lead"></div>
+				<div class="marker-wrapper"></div>
+			</div>
+			<div class="marker blue">
+				<div class="lead"></div>
+				<div class="marker-wrapper"></div>
+			</div>
+			<div class="marker yellow">
+				<div class="lead"></div>
+				<div class="marker-wrapper"></div>
+			</div>
+			<div class="marker green">
+				<div class="lead"></div>
+				<div class="marker-wrapper"></div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
