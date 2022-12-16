@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Registration Form</title>
+		<link rel="stylesheet" type="text/css" href="registrationForm.css">
+	</head>
+	<body>
+		<h1>Registration Form</h1>
+		<p>Please fill out this form with the required information</p>
+		<form action="https://thisisreg.com">
+			<fieldset>
+				<label>Enter Your First Name: <input type="text" name="First-name" required/></label>
+				<label>Enter Your Last Name: <input type="text" name="Last-name" required /></label>
+				<label>Enter Your Email: <input type="email" name="email" required /></label>
+				<label>Create a New Password: <input type="Password" name="password" pattern="[a-z0-5]{8,}" required /></label>
+			</fieldset>
+			<fieldset>
+				<label><input type="radio" name="account-type" value="personal account" class="inline"> Personal Account</label>
+				<label><input type="radio" name="account-type" value="Business Account" class="inline"> Business Account</label>
+				<label><input type="checkbox" name="terms anc condition" class="inline" reqired> I accept the <a href="">terms and conditions</a></label>
+			</fieldset>
+			<fieldset>
+				<label>Upload a profile picture: <input type="file" name="uploaded-file"></label>
+				<label>Input your age (years): <input type="number" name="age" min="13" max="120"></label>
+				<label>How did you hear abour us? 
+					<select name="referrer">
+						<option value="">(select one)</option>
+						<option value="1">Social media</option>
+						<option value="2">Word of mouth</option>
+						<option value="3">Advertisement</option>
+						<option value="4">Others</option>
+					</select></label>
+				<label>Provide a bio: <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea></label>
+			</fieldset>
+			<input type="submit" name="submit">
+		</form>
+	</body>
+</html>
